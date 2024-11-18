@@ -45,6 +45,8 @@ function addTask() {
   todoList.removeChild(li);
     });
  }
+addButton.addEventListener("click", addTask);
+
 todoInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
         addTask();
